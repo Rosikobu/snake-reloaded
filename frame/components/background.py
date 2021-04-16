@@ -1,7 +1,8 @@
 import random
 import pygame
 from pygame.math import Vector2
-from config import xSize, ySize, cell_size, cell_number
+
+from .loc_conf import xSize, ySize, cell_size, cell_number
 
 class Background:
 

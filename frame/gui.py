@@ -1,18 +1,19 @@
 import pygame, sys
-from snake import Snake
-from mouse import Mouse
-from model import Model
-from sandglass import Sandglass
-from peel import Peel
-import sound_controller
-from saw import Saw
 from typing import List, Tuple
-from background import Background
-from pygame.math import Vector2
-from config import FPS, xSize, ySize, SPEED
-from score import Score
-from bush import Bush
 import time
+from pygame.math import Vector2
+
+from .snake import Snake
+from .eatable.mouse import Mouse
+from .model import Model
+from .eatable.sandglass import Sandglass
+from .eatable.peel import Peel
+from .components import sound_controller
+from .eatable.saw import Saw
+from .components.background import Background
+from .config import FPS, xSize, ySize, SPEED
+from .components.score import Score
+from .noneatable.bush import Bush
 
 class GUI(object):
 

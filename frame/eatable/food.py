@@ -1,4 +1,4 @@
-from eatable import Eatable
+from .eatable import Eatable
 
 class Food(Eatable):   
      

@@ -1,14 +1,14 @@
-from config import cell_size, cell_number, FONT_SIZE, PREVIEW_SIZE
-from mouse import Mouse
-
 import pygame
+
+from .loc_conf import cell_size, cell_number, FONT_SIZE, PREVIEW_SIZE
+#from .eatable.mouse import Mouse
 
 class Score():
 
     def __init__(self, screen):
         self.score_counter = 0
         self.pyScreen = screen
-        self._load_texture()
+        #self._load_texture()
         self.game_font = pygame.font.Font(None,FONT_SIZE)
 
     def _load_texture(self):
@@ -23,10 +23,10 @@ class Score():
         score_y = int(cell_size)
 
         score_rect = score_surface.get_rect(center = (score_x,score_y))
-        mause_rect = self.mause_texture.get_rect(midright = (score_rect.left, score_rect.centery))
+        #mause_rect = self.mause_texture.get_rect(midright = (score_rect.left, score_rect.centery))
 
         self.pyScreen.blit(score_surface,score_rect)
-        self.pyScreen.blit(self.mause_texture,mause_rect)
+        #self.pyScreen.blit(self.mause_texture,mause_rect)
 
     def get_score(self):
         return self.score_counter

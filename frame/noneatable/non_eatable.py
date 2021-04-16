@@ -1,7 +1,8 @@
 import pygame
 import random
 from pygame.math import Vector2
-from config import xSize, ySize, cell_size, cell_number
+#from .config import xSize, ySize, cell_size, cell_number
+from .loc_conf import xSize, ySize, cell_number, cell_size
 
 class NonEatable():
 

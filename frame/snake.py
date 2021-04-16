@@ -1,9 +1,10 @@
 import pygame, sys
-from config import FPS, xSize, ySize, cell_size, cell_number, CUTTING
-from pygame.math import Vector2
 import time
-from saw import Saw
-from cake import Cake
+from pygame.math import Vector2
+
+from .config import FPS, xSize, ySize, cell_size, cell_number, CUTTING
+from .eatable.saw import Saw
+from .eatable.cake import Cake
 
 class Snake(object):
 

@@ -1,4 +1,4 @@
-from non_eatable import NonEatable
+from .non_eatable import NonEatable
 
 class Bush(NonEatable):
 

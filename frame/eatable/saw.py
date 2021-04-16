@@ -1,4 +1,4 @@
-from powerup import Powerup
+from .powerup import Powerup
 
 class Saw(Powerup):
 

@@ -1,5 +1,5 @@
-from gui import GUI
-from config import FPS
+from frame.gui import GUI
+from frame.config import FPS
 import pygame
 
 class Main(object):

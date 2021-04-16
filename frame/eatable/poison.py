@@ -1,5 +1,4 @@
-from powerup import Powerup 
-from config import TIME_TO_REVERSE
+from .powerup import Powerup
 
 class Poison(Powerup):
 

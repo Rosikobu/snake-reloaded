@@ -1,9 +1,10 @@
 import random
 import pygame
 from pygame.math import Vector2
-from config import xSize, ySize, cell_size, cell_number, TIME_TO_SLOW
-from food import Food
-from powerup import Powerup
+
+from .food import Food
+from .powerup import Powerup
+from .loc_conf import TIME_TO_SLOW
 
 class Sandglass(Powerup):
 

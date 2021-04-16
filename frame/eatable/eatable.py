@@ -2,7 +2,9 @@ import random
 import pygame
 from typing import List, Tuple
 from pygame.math import Vector2
-from config import xSize, ySize, cell_size, cell_number
+
+from .loc_conf import cell_number, cell_size, cell_number
+
 
 class Eatable:
 

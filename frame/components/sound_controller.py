@@ -1,12 +1,5 @@
 import pygame, sys
 
-#class Soundcontroller:
-
-    #def __init__(self):
-    #    _load_soundeffects()
-    
-    #@staticmethod
-    #def _load_soundeffects():
 pygame.mixer.init()
 mouse_sound = pygame.mixer.Sound('assets/Sound/mouse.ogg')
 cake_sound = pygame.mixer.Sound('assets/Sound/cake.ogg')

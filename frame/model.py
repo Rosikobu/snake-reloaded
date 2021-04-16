@@ -1,24 +1,26 @@
-from snake import Snake
-from mouse import Mouse
-from sandglass import Sandglass
-from cheese import Cheese
-from saw import Saw
-from cake import Cake
-from bush import Bush
-from rock import Rock
-from peel import Peel
-from poison import Poison
-
-from config import SCOREPOINTS_CHEESE,SCOREPOINTS_MAUSE,SCOREPOINTS_SAW,SCOREPOINTS_SANDGLASS,SCOREPOINTS_CAKE
-from config import cell_number, cell_size, SPAWNING_MOUSE_ON_CHEESE, PROBABILITY_FOR_CAKE 
-from config import PROBABILITY_FOR_SANDGLASS, PROBABILITY_FOR_SAW, MAX_ELEMENTS_ON_MAP
-from config import PROBABILITY_FOR_CHEESE, PROBABILITY_FOR_PEEL, PROBABILITY_FOR_POISON, PROBABILITY_FOR_MOUSE
-
 from pygame.math import Vector2
+from typing import List
 import random
 import pygame, sys
-from typing import List
-import sound_controller
+
+from .snake import Snake
+
+from .eatable.mouse import Mouse
+from .eatable.sandglass import Sandglass
+from .eatable.cheese import Cheese
+from .eatable.saw import Saw
+from .eatable.cake import Cake
+from .noneatable.bush import Bush
+from .noneatable.rock import Rock
+from .eatable.peel import Peel
+from .eatable.poison import Poison
+
+from .config import SCOREPOINTS_CHEESE,SCOREPOINTS_MAUSE,SCOREPOINTS_SAW,SCOREPOINTS_SANDGLASS,SCOREPOINTS_CAKE
+from .config import cell_number, cell_size, SPAWNING_MOUSE_ON_CHEESE, PROBABILITY_FOR_CAKE 
+from .config import PROBABILITY_FOR_SANDGLASS, PROBABILITY_FOR_SAW, MAX_ELEMENTS_ON_MAP
+from .config import PROBABILITY_FOR_CHEESE, PROBABILITY_FOR_PEEL, PROBABILITY_FOR_POISON, PROBABILITY_FOR_MOUSE
+
+from .components import sound_controller
 
 class Model(object):
 

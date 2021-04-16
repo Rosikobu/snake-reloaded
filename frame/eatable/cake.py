@@ -1,5 +1,5 @@
-from food import Food
-from config import STRECH_COUNT
+from .food import Food
+from .loc_conf import STRECH_COUNT
 
 class Cake(Food):
 
